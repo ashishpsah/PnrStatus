@@ -18,7 +18,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".InvalidPnr"></activity>
+        <activity android:name=".InvalidPnr"
+            android:label="Invalid PNR"></activity>
     </application>
 
 </manifest>

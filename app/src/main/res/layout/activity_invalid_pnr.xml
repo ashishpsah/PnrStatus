@@ -1,16 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.ashishpsah.pnrstatus.InvalidPnr">
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#EEEEEE">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="Please enter a valid PNR number" />
 
     <Button
         android:id="@+id/buttonHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back to home" />
+
+    <ImageView
+        android:id="@+id/fetch_image_logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Home"
-        tools:layout_editor_absoluteX="138dp"
-        tools:layout_editor_absoluteY="99dp" />
-</android.support.constraint.ConstraintLayout>
+        android:layout_margin="5dp"
+        android:src="@drawable/indianrail"
+        android:textStyle="normal|bold" />
+</LinearLayout>
